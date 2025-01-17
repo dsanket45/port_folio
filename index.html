@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="netlify" content="form-data">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Sanket's Portfolio</title>
+    <style></style>
+</head>
+<body>
+    <header>
+        <style></style>
+        <h1 class="heading" id="typping">Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#profile">Education</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <section id="about">
+        <h1 id="typing">Hi, I'm D Sanket! </h1>
+        <p>"Welcome to a space designed to inspire and impress. Explore innovative projects and thoughtful designs,
+             crafted to make your visit both meaningful and enjoyable.".</p>
+    </section>
+    
+
+    <section id="resume">
+        <style> </style>
+        <div class="about-bo">
+            <section id="resume-download">
+                <div class="download-section">
+                    <button id="download-resume-btn" class="btn-download">Get My Resume</button>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </section>
+
+
+
+<section id="about-section">
+    <style></style>
+    <div class="about-box">
+        <div class="about-photo">
+            <img src="sanket.jpeg" alt="Sanket's Photo">
+        </div> 
+        <div class="about-objective">
+            <h2>OBJECTIVE</h2>
+            <p class="paragraph">
+                "As a passionate web developer and aspiring data science enthusiast, 
+                my primary goal is to create responsive, user-friendly, and visually appealing
+                websites. With a strong foundation in Python and data structures and algorithms, 
+                I aim to build smart, data-driven solutions that solve real-world problems."
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <section id="profile">
+        <div class="box">
+            <h2>PROFILE SECTION</h2>
+            <div class="tabs">
+                <button class="tab active" onclick="showContent('education')">Education</button>
+                <button class="tab" onclick="showContent('skills')">Skills</button>
+                <button class="tab" onclick="showContent('projects')">Projects</button>
+            </div>
+    
+            <div class="tab-contents">
+                <div id="education" class="tab-content active">
+                    <h3>Educational Qualifications</h3>
+                    <p><strong>B.E. (Computer Science & Engineering)</strong> from Dr. SMCE with 8.5 CGPA.</p>
+                    <p><strong>PUC</strong> from Shree Guru Vidya Peetha with 90.33%.</p>
+                    <p><strong>High School</strong> from Prerana Public High School with 88%.</p>
+                </div>
+    
+                <div id="skills" class="tab-content">
+                    <h3>Skills</h3>
+                    <p><strong>Operating Systems:</strong> Windows, Linux.</p>
+                    <p><strong>Programming:</strong> Python, JavaScript, HTML, CSS.</p>
+                    <p><strong>Database:</strong> MySQL, MongoDB.</p>
+                </div>
+    
+                <div id="projects" class="tab-content">
+                    <h3>Projects</h3>
+                    <p><strong>Portfolio Website:</strong> A responsive portfolio showcasing my skills and projects.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript.</p>
+                    <button class="tab"><a href="https://github.com/dsanket45/portfolio" target="_blank">View Project</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <style></style>
+    
+    <script src="script.js"></script>
+    </section>
+        
+
+
+
+    <section id="contact">
+        <style></style>
+        <h2>Contact Me</h2>
+        <div class="container">
+            <form id="contactForm" name="contact" method="POST" data-netlify="true" onsubmit="submit">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="mobile" placeholder="Enter your mobile number" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <textarea name="message" placeholder="Message here..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <script src="ajax.js"></script>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <style></style>
+        <div>
+            <a href="https://github.com/dsanket45/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/d-sanket-39b735246/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/D__Sanket" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thenameissanket_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p><a href="mailto:dsanket373@gmail.com">dsanket373@gmail.com</a></p>
+            <p>&copy; 2025 Sanket. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

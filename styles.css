@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            background: linear-gradient(45deg, rgb(235, 237, 238), rgba(71, 204, 245, 0.959));
+            font-family: 'Poppins', sans-serif;
+            /* animation: gradientAnimation 8s ease infinite; */
+        }
+        
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+        section, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0b6eef;
+        }
+        /* footer {
+            background: linear-gradient(45deg, rgb(245, 244, 244), rgba(12, 190, 249, 0.97));
+        } */
+        /* Base Typing Effect */
+#typing {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 4vw; Scalable font size based on screen width */
+    border-right: 3px solid black;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing var(--animation-duration, 6s) steps(30) infinite, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+/* Caret Blinking */
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+    100% { border-color: black; }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #typing {
+        font-size: 4vw; /* Larger font on smaller screens */
+    }
+}
+
+
+#typing.slow {
+    --animation-duration: 10s; /* Slower animation */
+}
+
+        .objective {
+            font-style: italic;
+        }
+        .education {
+            margin: 20px;
+        }
+        .education h2 {
+            font-size: 24px;
+        }
+        .education p {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        #contactForm {
+            background: #fff;
+            padding: 20px;
+            width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.719);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: linear-gradient(145deg, rgb(146, 248, 243), rgb(133, 244, 239));
+        }
+        #contactForm input, 
+        #contactForm textarea, 
+        #contactForm button {
+            font-size: 14px;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+        }
+        #contactForm button {
+            background: linear-gradient(90deg, #007BFF, #00c6ff);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        #contactForm button:hover {
+            background: linear-gradient(90deg, #00c6ff, #007BFF);
+            transform: scale(1.05);
+        }
+
+
+          /* Heading Style */
+/* Base Heading Style */
+.heading {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 15vw; /* Large font size for mobile */
+    margin: 0;
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+    .heading {
+        font-size: 4vw; /* Adjust font size for tablets and smaller laptops */
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 7vw; /* Smaller font size for large laptops/desktops */
+    }
+}
+
+
+
+
+
+/* General Styles */
+        /* General Styles */
+        #resume {
+            /* height: 100vh; Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: #3498db; Blue background */
+            text-align: center;
+        }
+        
+        #resume-download .download-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Button Styles */
+        .btn-download {
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            /* color: #fff; */
+            background-color: #2980b9; /* Darker blue */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.741); /* Add subtle shadow */
+        }
+        
+        /* Hover and Focus Effects */
+        .btn-download:hover,
+        .btn-download:focus {
+            background-color: #1f6592; /* Darker blue on hover */
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+        }
+        
+        /* Button Animation */
+        .btn-download {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        /* Fade-in and Up animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+
+
+
+
+
+        .about-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 780px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: #fff; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.711);
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+            /* gap: 5px; */
+        }
+        
+        /* Photo Styles */
+        .about-photo {
+            margin-bottom: 20px;
+            padding-bottom: 0px;
+            gap: 5px;
+            /* padding: 50px; */
+        }
+        
+        .about-photo img {
+            border-radius: 8%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.711);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Hover Effect on Photo */
+        /* General styles for the about-photo container */
+        .about-photo {
+            position: relative; /* Ensures text can be placed over the image */
+            width: 280px;
+            height: 270px;
+            perspective: 1000px; /* Adds perspective for the 3D flip effect */
+        }
+        
+        .about-photo img {
+            border-radius: 8%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.707);
+            transition: transform 0.6s ease, filter 0.3s ease; /* Smooth flip and quality transition */
+        }
+        
+        /* Coin Flip Animation */
+        .about-photo:hover img {
+            transform: rotateY(180deg); /* Flip the image horizontally */
+            filter: blur(4px); /* Apply blur to reduce image quality */
+        }
+        
+        /* Hover Text Style */
+        .about-photo::after {
+            content: " mr.D Sanket";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #0a0a0a;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Prevent interaction with the text */
+        }
+        
+        /* Show text on hover */
+        .about-photo:hover::after {
+            opacity: 1; /* Make text visible */
+        }
+        
+        
+        .about-photo::after {
+            content: "D Sanket";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #111111;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* Prevent interaction with the text */
+        }
+        
+        /* Show text on hover */
+        .about-photo:hover::after {
+            opacity: 1; /* Make text visible */
+        }
+        
+        
+        /* Objective Styles */
+        .about-objective h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .paragraph {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+            margin: 0 auto;
+            max-width: 700px;
+            animation: slideIn 1s ease-out;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Responsive Design for Large Screens (Laptop/Desktops) */
+        @media (min-width:800px) {
+            .about-box {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 40px;
+            }
+        
+            .about-photo {
+                margin-right: 40px;
+            }
+        
+            .about-objective h2 {
+                font-size: 32px;
+            }
+        
+            .paragraph {
+                font-size: 18px;
+                max-width: 900px;
+            }
+        }
+        
+        /* Responsive Design for Tablets and Smaller Devices */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            .about-box {
+                flex-direction: column;
+                padding: 20px;
+            }
+        
+            .about-photo {
+                margin-bottom: 20px;
+            }
+        
+            .about-objective h2 {
+                font-size: 24px;
+            }
+        
+            .paragraph {
+                font-size: 16px;
+                max-width: 700px;
+            }
+        }
+        
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            #about-section {
+                padding: 10px;
+            }
+        
+            .about-box {
+                padding: 25px;
+            }
+        
+            .about-photo img {
+                width: 250px;
+                height: 240px;
+                /* padding-top: 20px;
+                 padding-left: 20px; 
+                padding: 20px; */
+                border-radius: 10px;
+            }
+        
+            .about-objective h2 {
+                font-size: 22px;
+            }
+        
+            .paragraph {
+                font-size: 14px;
+                max-width: 100%;
+            }
+        }
+
+
+
+
+        .box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.788);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            background: linear-gradient(135deg, #0073ff, #035cf4);
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .tab:hover {
+            background: linear-gradient(135deg, #03c7f4, #0138fc);
+            transform: scale(1.05);
+        }
+        .tab.active {
+            background: #0606ddf4;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.771);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                flex-wrap: wrap;
+            }
+            .tab {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+            .box {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+        }
+
+
+
+
+         /* Contact Section Styling */
+#contact {
+    padding: 50px 20px;
+    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+    color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: slideInUp 1.2s ease-in-out;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+#contact form button {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#contact form button:hover {
+    background: #ff4757;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contact form textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+
+
+section, footer {
+    padding: 20px;
+    text-align: center;
+}
+a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000; /* Default color (black) */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+/* Hover effects for each brand */
+a:hover .fa-github {
+    color: #171515; /* GitHub original color */
+}
+a:hover .fa-linkedin {
+    color: #0077b5; /* LinkedIn original color */
+}
+a:hover .fa-twitter {
+    color: #1DA1F2; /* Twitter/X original color */
+}
+a:hover .fa-instagram {
+    color: #E4405F; /* Instagram original color */
+}
